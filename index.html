@@ -1,12 +1,374 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>太阳系</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy setup</title>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="buttons.css" rel="stylesheet">
+        <link href="easysetup-style.css" rel="stylesheet">
+        <link href="fontello.css" rel="stylesheet">
+    </head>
+    <body class="no-trans">
+        <header class="header fixed  navbar navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="header-left ">
+                            <!-- logo -->
+                            <div class="logo smooth-scroll">
+                                <a href="#banner"><img id="logo" src="img/viettel.png" alt="vettel"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="header-right ">
+                            <div class="main-navigation animated">
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li class="active"><a href="#banner">Home</a></li>
+                                                <li><a href="#about">WAN</a></li>
+                                                <li><a href="#services">LAN</a></li>
+                                                <li><a href="#portfolio">Wifi</a></li>
+                                                <li><a href="#clients">Management</a></li>
+                                                <li><a href="#"><p id="Advance" class="icon-cog">Advance Setup</p></a></li>											
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- banner start -->
+        <div id="banner" class="banner">
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                            <h2 class="text-center">Easy Setup</h2>
+                            <p class="lead text-center">Here you can have your ONT quickly configured...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
 
-<body>
-<canvas id="canvas" width="1000" height="1000" style=" background:#000;"></canvas>
-<script src="js.js"></script>
-</body>
+        <!-- section wan section start -->
+        <div class="section object-non-visible" data-animation-effect="fadeIn">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1 id="about" class="title text-center">WAN  <span>SECTION</span></h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h3>
+                                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Internet PPPoE
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <form class="form-horizontal form-pppoe" role="form">
+                                            <fieldset>
+                                                <legend></legend>
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label" for="internet_username">Username</label>
+                                                    <div class="col-sm-10">
+                                                        <input  class="form-control" id="internet_username" name="internet_username" type="text" placeholder=""  />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label" for="internet_password">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="password" id="pwd-internet">
+                                                            <button class="form-control button" type="button" >Double-click For Change Password</button>
+                                                            <!--                                                            <input class="form-control" id="internet_password"  name="internet_password" type="password" />
+                                                                                                                        <span class="glyphicon glyphicon-eye-open glyphicon-eye-open1"></span>-->
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group ">
+                                                    <div class="col-sm-offset-8">
+                                                        <button class="button button-pill button-primary" type="submit" id="internet-submit" disabled="true" >OK</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset> 
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h3>
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                VoIP PPPoE
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                                        <form class="form-horizontal form-voip" role="form">
+                                            <fieldset>
+                                                <legend></legend>
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label" for="voip_username">Username</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" id="voip_username"  name="voip_username" type="text"  placeholder="" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label" for="voip_password">Password</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="password" id="pwd-voip">
+                                                            <button class="form-control button" type="button" >Double-click For Change Password</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <div class="col-sm-offset-8">
+                                                        <button class="button button-pill button-primary" type="submit" id="voip-submit" disabled="true">OK</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>  
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- section wan section end -->
+
+        <!-- section lan section start -->
+        <div class="section translucent-bg blue">
+            <div class="container object-non-visible" data-animation-effect="fadeIn">
+                <h1 id="services"  class="text-center title">LAN SECTION</h1>
+                <div class="space"></div>
+                <div class="translucent-bg blue">
+                    <div class="container">
+                        <div class="list-horizontal">
+                            <div class="row" id="port_staus"></div>
+                            <div class="row col-xs-12 lan-table">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>LanNo</th>
+                                            <th>Services/Profile from OLT</th>
+                                            <th>VLAN</th>
+                                            <th>Priority</th>
+                                            <th>Text Shown on LAN port</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h3>
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Configuration DNS
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                    <form class="form-horizontal form-dns" role="form">
+                                        <fieldset>
+                                            <legend></legend>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Enable LAN DHCP</label>
+                                                <div class="col-sm-2">
+                                                    <input class="col-sm-2 form-control" type="checkbox" id="dhcp-checkbox" name="is_checked"> 
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="ds_host">Primary DNS</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" id="dns1" name="dns1" type="text" placeholder="xx.xx.xx.xx"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="ds_username">Secondary DNS</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" id="dns2" name="dns2" type="text" placeholder="xx.xx.xx.xx"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="ds_username">Third  DNS</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" id="dns3" name="dns3" type="text" placeholder="xx.xx.xx.xx"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <div class="col-sm-offset-9">
+                                                    <button class="button button-pill button-primary">OK</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- section lan section end -->
+
+        <!-- section wifi section start -->
+        <div class="section">
+            <div class="container object-non-visible" data-animation-effect="fadeIn">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 id="portfolio" class="title text-center">WIFI  <span>SECTION</span></h1>
+                        <div class="row">
+                            <div class="col-md-6 center-block center-clean">
+                                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h3>
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                   Configuration
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                            <legend></legend>
+                                            <form class="form-horizontal form-wifi" role="form">
+                                                <fieldset>     
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label" for="wifi_select">SSID Select</label>
+                                                        <div class="col-sm-9">
+                                                            <select id = "wifi_ssid_select" name="wifi_select">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label" for="wifi_ssid">SSID Name</label>
+                                                        <div class="col-sm-9">
+                                                            <input class="form-control" id="wifi_ssid" name="wifi_ssid" type="text" placeholder="请设置名称" required oninvalid="setCustomValidity('不能为空')" oninput="setCustomValidity('');"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label" for="wifi_password">Password</label>
+                                                        <div class="col-sm-9">
+                                                            <input class="form-control" id="wifi_password" name="wifi_password" type="password" placeholder="请设置名称" required oninvalid="setCustomValidity('不能为空')" oninput="setCustomValidity('');"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-8">
+                                                            <button class="button button-pill button-primary">OK</button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>   
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section wifi section end -->
+
+        <!-- section admin section start -->
+        <div class="section translucent-bg blue">
+            <div class="container object-non-visible" data-animation-effect="fadeIn">
+                <h1 id="clients" class="title text-center">Management Section</h1>
+                <div class="space"></div>
+                
+               
+                <div class="row">
+                    <div class="col-md-6 center-block center-clean">
+                        <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h3>
+                                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            Administration Password Change
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                                    <legend></legend>
+                                    <form class="form-horizontal form-adminPasswd" role="form">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="admin_password">New Password</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" id="admin_password" type="password" name="pswdNew"   placeholder="Please set the password" pattern=".{5,24}" required title="5 to 24 characters" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="admin_re_entry">Re-enter Password</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" id="admin_re_entry" type="password" name="pswdConfirm"placeholder="Please set the password" pattern=".{5,24}" required title="5 to 24 characters" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label" for="prompt">Prompt Message</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" id="prompt" type="text" name="pwdMsg" placeholder="Please set the Prompt Message" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group ">
+                                                <div class="col-sm-offset-8">
+                                                    <button class="button button-pill button-primary">OK</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>     
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <!-- section admin section  end -->
+        <!-- footer start -->
+        <footer id="footer">
+            <div class="footer section default-bg space">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center smooth-scroll">
+                            <a href="#banner" class="button button-glow button-circle button-action button-jumbo"><i class="icon-home"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->  
+			
+        <script type="text/javascript" src="jquery-3.1.1.js"></script>
+        <script type="text/javascript"  src="bootstrap.min.js"></script>
+        <script type="text/javascript"   src="easysetup-layout.js"></script>
+        <script type="text/javascript"  src="easysetup.js"></script>
+    </body>
 </html>
